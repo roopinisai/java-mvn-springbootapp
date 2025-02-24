@@ -18,7 +18,7 @@ spec:
       - name: bankapp-eta-container
         image: roopinisai/kubeapp
         ports:
-        - containerPort: 8089
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 31030  
-    port: 8089
-    targetPort: 8089
+    port: 8080
+    targetPort: 8080
